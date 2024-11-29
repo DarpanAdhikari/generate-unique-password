@@ -17,7 +17,7 @@ By using this package, developers can quickly and easily generate secure passwor
 You can install this package via npm by running the following command:
 
 ```bash
-npm i generate-unique-password
+npm i multilang-password-generator
 ```
 
 ## Usage
