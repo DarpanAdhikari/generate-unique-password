@@ -1,7 +1,7 @@
 {
   "name": "multilang-password-generator",
   "version": "1.0.0",
-  "description": "An password generator that will help to create  random strong password",
+  "description": "A versatile password generator for creating strong, unique passwords and PINs in multiple languages",
   "main": "index.js",
   "type": "module",
   "scripts": {
