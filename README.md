@@ -68,8 +68,6 @@ Contributions are welcome! Please feel free to submit issues or pull requests to
 
 Developed with ❤️ by [Darpan Adhikari](https://www.darpanadhikari.com.np). 
 
-```
-
 ### Key Points:
 - **Benefits**: The README highlights the main features of your package, including multi-language support, flexible strength levels, and customizable password types.
 - **Installation**: Provides the npm installation command.
