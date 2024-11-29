@@ -1,6 +1,3 @@
-Sure! Below is the updated version of your README with the changes you requested, including the simplified example and setup instructions for projects using React or other frameworks:
-
-```markdown
 # Generate Unique Password In Multiple Languages
 
 This package provides a highly customizable password generator that supports multiple languages, strength levels, and password types. With a variety of options, this tool is perfect for developers who need to generate unique and secure passwords for their applications.
