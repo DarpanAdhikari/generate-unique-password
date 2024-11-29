@@ -1,3 +1,6 @@
+Sure! Below is the updated version of your README with the changes you requested, including the simplified example and setup instructions for projects using React or other frameworks:
+
+```markdown
 # Generate Unique Password In Multiple Languages
 
 This package provides a highly customizable password generator that supports multiple languages, strength levels, and password types. With a variety of options, this tool is perfect for developers who need to generate unique and secure passwords for their applications.
@@ -20,18 +23,32 @@ You can install this package via npm by running the following command:
 npm i multilang-password-generator
 ```
 
+If you're using frameworks like React or other environments that support ES Modules, make sure your `package.json` has the following:
+
+```json
+{
+  "type": "module"
+}
+```
+
+This ensures your project can handle ES Module imports.
+
+Alternatively, if you prefer not to install the package and want to use it directly in the browser, you can import it from a CDN link.
+
 ## Usage
 
 Once installed, you can import and use the password generator in your project like this:
 
 ```javascript
 import { generatePassword } from "password-generator";
+// Or via CDN if no installation is done:
+// import { generatePassword } from 'https://unpkg.com/multilang-password-generator@1.0.2/index.js';
 
-console.log(generatePassword(10, "password", "midium", "nepali"))   // e.g., "कखगचडत"
-console.log(generatePassword(12, "password", "strong", "japanese")) // e.g., "たてとふ0$!あ"
-console.log(generatePassword(15, "password", "medium", "spanish"))  // e.g., "ñáÑ3Bc78o9Mn" 
-console.log(generatePassword(8, "password", "normal", "german"))    // e.g., "äößüabc" 
-console.log(generatePassword(14, "password", "strong", "chinese"))  // e.g., "的大是123!@#国"
+console.log(generatePassword(10, "password", "medium", "nepali"));   // e.g., "कखगचडत"
+console.log(generatePassword(12, "password", "strong", "japanese")); // e.g., "たてとふ0$!あ"
+console.log(generatePassword(15, "password", "medium", "spanish"));  // e.g., "ñáÑ3Bc78o9Mn" 
+console.log(generatePassword(8, "password", "normal", "german"));    // e.g., "äößüabc" 
+console.log(generatePassword(14, "password", "strong", "chinese"));  // e.g., "的大是123!@#国"
 ```
 
 ### Parameters:
