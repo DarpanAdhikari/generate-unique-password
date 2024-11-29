@@ -38,8 +38,8 @@ Once installed, you can import and use the password generator in your project li
 
 ```javascript
 import { generatePassword } from "password-generator";
-// Or via CDN if no installation is done: <script type="module" src="script.js"></script>
-// import { generatePassword } from 'https://unpkg.com/multilang-password-generator@1.0.2/index.js';
+/* Or via CDN if no installation is done: <script type="module" src="script.js"></script>
+ import { generatePassword } from 'https://unpkg.com/multilang-password-generator@1.0.2/index.js'; */
 
 console.log(generatePassword(10, "password", "medium", "nepali"));   // e.g., "कखगचडत"
 console.log(generatePassword(12, "password", "strong", "japanese")); // e.g., "たてとふ0$!あ"
