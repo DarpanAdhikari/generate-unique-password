@@ -2,15 +2,12 @@ export function generatePassword(length = 8, type = "password", strength = "medi
     if (length < 1) {
         throw new Error("Password length must be at least 1.");
     }
-
-    // Define character pools based on strength
     const charPools = {
         normal: "abcdefghijklmnopqrstuvwxyz",
         medium: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
         strong: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{};:,.<>?/"
     };
 
-    // Define language character sets
     const languagePools = {
         english: charPools,
         nepali: {
@@ -65,13 +62,10 @@ export function generatePassword(length = 8, type = "password", strength = "medi
         }
     };
 
-    // Select the language pool
     const selectedLanguage = languagePools[language.toLowerCase()] || languagePools.english;
 
-    // Select character pool based on strength
     let characters = selectedLanguage[strength.toLowerCase()] || selectedLanguage.medium;
 
-    // Adjust for type
     if (type === "pin") {
         characters = "0123456789";
     } else if (type !== "password") {

@@ -26,7 +26,7 @@ npm i generate-unique-password
 Once installed, you can import and use the password generator in your project like this:
 
 ```javascript
-const generatePassword = require('generate-unique-password');
+import { generatePassword } from "password-generator";
 
 // Generate a random password in Nepali with medium strength
 let password = generatePassword(12, "password", "medium", "nepali");
