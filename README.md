@@ -27,13 +27,11 @@ Once installed, you can import and use the password generator in your project li
 ```javascript
 import { generatePassword } from "password-generator";
 
-// Generate a random password in Nepali with medium strength
-let password = generatePassword(12, "password", "medium", "nepali");
-console.log(password);
-
-// Generate a pin with 6 digits
-let pin = generatePassword(6, "pin", "normal", "english");
-console.log(pin);
+console.log(generatePassword(10, "password", "midium", "nepali"))   // e.g., "कखगचडत"
+console.log(generatePassword(12, "password", "strong", "japanese")) // e.g., "たてとふ0$!あ"
+console.log(generatePassword(15, "password", "medium", "spanish"))  // e.g., "ñáÑ3Bc78o9Mn" 
+console.log(generatePassword(8, "password", "normal", "german"))    // e.g., "äößüabc" 
+console.log(generatePassword(14, "password", "strong", "chinese"))  // e.g., "的大是123!@#国"
 ```
 
 ### Parameters:
