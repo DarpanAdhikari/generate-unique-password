@@ -1,4 +1,4 @@
-# Generate Unique Password
+# Generate Unique Password In Multiple Languages
 
 This package provides a highly customizable password generator that supports multiple languages, strength levels, and password types. With a variety of options, this tool is perfect for developers who need to generate unique and secure passwords for their applications.
 
