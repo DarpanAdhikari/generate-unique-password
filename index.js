@@ -1,4 +1,4 @@
-export function generatePassword(length = 8, type = "password", strength = "medium", language = "english") {
+export function generatePassword({length = 8, type = "password", strength = "medium", language = "english"}) {
     if (length < 1) {
         throw new Error("Password length must be at least 1.");
     }
@@ -71,8 +71,6 @@ export function generatePassword(length = 8, type = "password", strength = "medi
     } else if (type !== "password") {
         throw new Error("Unsupported type. Use 'pin' or 'password'.");
     }
-
-    // Generate the password
     let password = "";
     for (let i = 0; i < length; i++) {
         password += characters[Math.floor(Math.random() * characters.length)];

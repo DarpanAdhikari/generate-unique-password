@@ -41,11 +41,8 @@ import { generatePassword } from "password-generator";
 /* Or via CDN if no installation is done: <script type="module" src="script.js"></script>
  import { generatePassword } from 'https://unpkg.com/multilang-password-generator@1.0.2/index.js'; */
 
-console.log(generatePassword(10, "password", "medium", "nepali"));   // e.g., "कखगचडत"
-console.log(generatePassword(12, "password", "strong", "japanese")); // e.g., "たてとふ0$!あ"
-console.log(generatePassword(15, "password", "medium", "spanish"));  // e.g., "ñáÑ3Bc78o9Mn" 
-console.log(generatePassword(8, "password", "normal", "german"));    // e.g., "äößüabc" 
-console.log(generatePassword(14, "password", "strong", "chinese"));  // e.g., "的大是123!@#国"
+console.log(generatePassword({length = 10,type = "password",strength = "medium",language = "nepali"}));   // e.g., "कखगचडत"
+console.log(generatePassword());   // Default length = 8,type = "password",strength = "medium",language = "english"
 ```
 
 ### Parameters:
